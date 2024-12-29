@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #6dd5ed, #2193b0);
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+.button-group button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-group button:hover {
+    transform: scale(1.1);
+}
+
+.timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff4444;
+    margin-bottom: 10px;
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #f0f0f0;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+#options button.correct {
+    background: #28a745;
+    color: white;
+}
+
+#options button.wrong {
+    background: #dc3545;
+    color: white;
+}
+
+#options button:hover {
+    background: hsl(150, 100%, 51%);
+}
+
+#options button.wrong:hover {
+    background: #f44336;
+}
